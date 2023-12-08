@@ -2,10 +2,10 @@
 My custom errno extension library
 
 # Usage
-The order of include directories matter when using this library, ensure that your own directory is the first one in the list, and that this libraries directory is the last one in the list. Any libraries that depend on this can be placed in any order in between.
+The order of include directories matter when using this library, ensure that your own directory is the first one in the list, and that this libraries directory is the last one in the list. Any libraries that depend on this can be placed in any order in between. The provided error.c is also required to compile this library.
 
 ```bash
-gcc -Iinclude -Ipath/to/other/libraries/include -Icustom-errno/include source.c -o a.out
+gcc -Iinclude -Ipath/to/other/libraries/include -Icustom-errno/include error.c source.c -o a.out
 ```
 
 When using other libraries that depend on custom-errno, they will provide their own errors within their "custom-errnos.h" header.
