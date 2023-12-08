@@ -16,9 +16,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#ifndef _CUSTOM_ERRNOS_H_
-#define _CUSTOM_ERRNOS_H_
-
 /*
  * If you do not want to add custom errnos, do NOT make this file in your include directory
  * If you're using a library that does produce this file, it will be included
@@ -56,5 +53,3 @@ __push_errno_strs
 #define __CUSTOM_ERRNO_STRS __pop_errno_strs __CUSTOM_ERRNO_STRS	\
 	"Example Error 1",												\
 	"Example Error 2",
-
-#endif
